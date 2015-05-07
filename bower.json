@@ -1,0 +1,17 @@
+{
+  "name": "gruntfile",
+  "version": "0.1.0",
+  "homepage": "https://github.com/xiangming/gruntfile",
+  "authors": [
+    "arvin <webappsniper@gmail.com>"
+  ],
+  "description": "gruntfile for new project",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
