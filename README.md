@@ -2,7 +2,12 @@
 
 包含gruntfile等用于项目初始化的文件。
 
-> 注意：因为需要时常维护，建议使用`git clone`，而不建议使用bower来管理这个repo。
+## 安装
+
+```bash
+bower install gruntfile
+```
+
 
 ## 文件说明
 
