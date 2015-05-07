@@ -66,7 +66,17 @@ module.exports = function(grunt){
 			}
 		},
 		copy: {
-			assets: {
+			less: {
+				files: [
+					{expand: true, cwd: 'bower_components/gruntfile/less/', src:['**','.csscomb.json'], dest: 'less/'},
+				]
+			},
+			gitignore: {
+				files: [
+					{expand: true, cwd: 'bower_components/gruntfile/', src:['.gitignore'], dest: ''},
+				]
+			},
+			fonts: {
 				files: [
 					{expand: true, cwd: 'bower_components/font-awesome/fonts/', src:['**'], dest: 'fonts/'},
 				]
@@ -97,5 +107,6 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-csscomb');
 	//制定任务
+	grunt.registerTask('init',['copy', 'uglify', 'less', 'csscomb', 'cssmin', 'watch']);
 	grunt.registerTask('default',['uglify', 'less', 'csscomb', 'cssmin', 'watch']);
 }
