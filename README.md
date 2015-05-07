@@ -6,7 +6,6 @@
 + **gruntfile.js**：grunt配置
 + **package.json**：npm依赖管理
 
-## bower install
 
 ```bash
 bower install gruntfile
