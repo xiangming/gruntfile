@@ -32,7 +32,7 @@ module.exports = function(grunt){
 		less: {
 			build: {
 				files: {
-					'style.css': 'less/build.less'
+					'css/common.css': 'less/build.less'
 				}
 			}
 		},
@@ -42,7 +42,7 @@ module.exports = function(grunt){
 			},
 			build: {
 				files: {
-					'style.css': 'style.css'
+					'css/common.css': 'css/common.css'
 				}
 			}
 		},
@@ -59,9 +59,9 @@ module.exports = function(grunt){
 					]
 				}
 			},
-			style: {
+			common: {
 				files: {
-					'style.css': 'style.css'
+					'css/common.min.css': 'css/common.css'
 				}
 			}
 		},
@@ -92,7 +92,7 @@ module.exports = function(grunt){
 			},
 			less: {
 				files: ['less/*.less', 'less/*/*.less'],
-				tasks: ['less', 'csscomb', 'cssmin:style'],
+				tasks: ['less', 'csscomb', 'cssmin:common'],
                 options: {
                     livereload: true
                 }

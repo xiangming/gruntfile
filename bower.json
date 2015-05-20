@@ -13,5 +13,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "font-awesome": "^4.2",
+    "jquery": "^1.11",
+    "jquery-swipe": "^0.1.0"
+  }
 }

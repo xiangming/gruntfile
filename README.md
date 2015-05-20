@@ -9,13 +9,12 @@
 
 ```bash
 bower install gruntfile
-bower install jquery#1.11.1
-bower install bootstrap
-bower install font-awesome#4.2
-bower install ...
 
-# 复制repo里面的 **gruntfile.js**、**package.json**到项目根目录。
-# 根据具体项目需求，修改 **gruntfile.js**、**package.json**。
+# 复制repo里面的 **gruntfile.js**、**package.json**、**bower.json**到项目根目录。
+# 根据具体项目需求，修改 **gruntfile.js**、**package.json**、**bower.json**。
+
+## 手动安装或者使用bower_component/gruntfile/里面的bower.json
+bower install
 
 # 安装grunt的依赖包
 npm install
