@@ -1,10 +1,6 @@
 # gruntfile
 
-包含gruntfile等用于项目初始化的文件。
-+ **.csscomb.json**：csscomb配置
-+ **.gitignore**：git不应track的文件和目录列表
-+ **gruntfile.js**：grunt配置
-+ **package.json**：npm依赖管理
+使用grunt & bower的初始化项目。
 
 
 ```bash
