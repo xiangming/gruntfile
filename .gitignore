@@ -4,6 +4,7 @@ db.json
 debug.log
 node_modules/
 bower_components/
+release/
 __MACOSX/
 public/
 .deploy/
