@@ -34,6 +34,11 @@
 }
 
 // transition
+.transition-all() {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 .transition(@transition) {
     -webkit-transition: @transition;
        -moz-transition: @transition;
@@ -69,41 +74,44 @@
 
 // Bootstrap Button Variant
 .button-variant(@color; @background; @border) {
-  color: @color;
-  background-color: @background;
-  border-color: @border;
-
-  &:hover,
-  &:focus,
-  &:active,
-  &.active,
-  .open .dropdown-toggle& {
     color: @color;
-    background-color: darken(@background, 5%);
-        border-color: darken(@border, 5%);
-  }
-  &:active,
-  &.active,
-  .open .dropdown-toggle& {
-    background-image: none;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
+    background-color: @background;
+    border-color: @border;
+    .transition-all;
+
     &:hover,
     &:focus,
+    &.focus,
     &:active,
-    &.active {
-      background-color: @background;
-          border-color: @border;
+    &.active,
+    .open > .dropdown-toggle& {
+        color: @color;
+        background-color: darken(@background, 5%);
+        border-color: darken(@border, 7%);
     }
-  }
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: @background;
+            border-color: @border;
+        }
+    }
 
-  .badge {
-    color: @background;
-    background-color: @color;
-  }
+    .badge {
+        color: @background;
+        background-color: @color;
+    }
 }
 
 // Form control focus state
