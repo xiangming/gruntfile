@@ -19,7 +19,10 @@ module.exports = function(grunt){
 				files: {
 					'js/base.min.js': [
 						'bower_components/jquery/dist/jquery.js',
-						'bower_components/bootstrap/dist/js/bootstrap.js'
+						'bower_components/bootstrap/dist/js/bootstrap.js',
+						'bower_components/fullpage.js/jquery.fullPage.js',
+						'bower_components/wow.js/dist/wow.js',
+						'bower_components/jquery-easing/jquery.easing.js'
 					]
 				}
 			},
@@ -55,7 +58,9 @@ module.exports = function(grunt){
 				files: {
 					'css/base.min.css': [
 						'bower_components/font-awesome/css/font-awesome.css',
-						'bower_components/bootstrap/dist/css/bootstrap.css'
+						'bower_components/bootstrap/dist/css/bootstrap.css',
+						'bower_components/fullpage.js/jquery.fullPage.css',
+						'bower_components/animate-css/animate.css'
 					]
 				}
 			},
